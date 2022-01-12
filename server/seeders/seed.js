@@ -1,5 +1,8 @@
 const db = require('../config/connection');
-const { User, Item } = require('../models');
+
+// const { User, Item } = require('../models');
+const { User } = require('../models')
+
 const userSeeds = require('./userSeeds.json');
 //const itemSeeds = require('./itemSeeds.json');
 
@@ -15,6 +18,6 @@ db.once('open', async () => {
         process.exit(1);
     }
 
-
+    console.log("Success")
     process.exit(0)
 })
