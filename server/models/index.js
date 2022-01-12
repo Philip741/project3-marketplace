@@ -1,4 +1,4 @@
-//const blah blah 
-//const blah blah
+const User = require('./User');
+const Item = require('./Item');
 
-//module.exports = {blah, blah} 
+module.exports = { User, Item};
