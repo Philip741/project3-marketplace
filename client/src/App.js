@@ -1,24 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import { Fragment, useState } from 'react';
+
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
+import MainSection from './components/Main/MainSection';
+import SignUp from './components/SignUp/SignUp';
 
 function App() {
+  const [modalIsShow, setModalIsShown] = useState(false);
+
+  const logInHandler = (e) => {
+    console.log(e);
+  };
+
+  const showModalHandler = (e) => {
+    e.preventDefault();
+    setModalIsShown(true);
+  };
+
+  const hideModalhandler = () => {
+    setModalIsShown(false);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      {modalIsShow && <SignUp onClose={hideModalhandler} />}
+      <Header onSignup={showModalHandler} onLogIn={logInHandler} />
+      <MainSection />
+      <Footer />
+    </Fragment>
   );
 }
 
