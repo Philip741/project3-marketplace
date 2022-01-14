@@ -6,7 +6,14 @@ const typeDefs = gql `
         username: String
         email: String
         password: String
-        
+        Item: Item
+    }
+
+    type Item {
+        _id: ID
+        name: String
+        description: String
+        price: Int
     }
 
     type Query {

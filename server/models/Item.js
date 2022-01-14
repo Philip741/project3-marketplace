@@ -1,6 +1,12 @@
 const { Schema, model } = require("mongoose");
 
 const itemSchema = new Schema({
+  itemPoster: {
+    type: String,
+    required: true,
+    trim: true,
+  },
+  
   name: { type: String, required: true, trim: true },
 
   description: { type: String, required: true, trim: true },
