@@ -1,5 +1,5 @@
 const { Schema, model } = require('mongoose');
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 
 const userSchema = new Schema({
     //string with no spaces for username, must be unique
@@ -24,12 +24,12 @@ const userSchema = new Schema({
     },
     
     //this is to reference items for particular user
-    items: [
-        {
-            type: Schema.Types.ObjectId,
-            ref: 'Item'
-        },
-    ],
+    // items: [
+    //     {
+    //         type: Schema.Types.ObjectId,
+    //         ref: 'Item'
+    //     },
+    // ],
 });
 
 userSchema.pre('save', async function (next) {
@@ -45,5 +45,5 @@ userSchema.methods.isCorrectPassword = async function (password) {
     return bcrypt.compare(password, this.password);
 };
 
-const User = model(User, userSchema)
+const User = model("User" , userSchema)
 module.exports = User;

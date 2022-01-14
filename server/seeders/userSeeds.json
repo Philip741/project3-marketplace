@@ -1,0 +1,32 @@
+[
+    {
+        "username": "Zachary Moore",
+        "email": "zacharymoore@gmail.com",
+        "password": "123456789"
+    },
+    {
+        "username": "Phillip Browning",
+        "email": "phillipbrowning@gmail.com",
+        "password": "123456789"
+    },
+    {
+        "username": "Alexander Brandon",
+        "email": "alexanderbrandon@gmail.com",
+        "password": "123456789"
+    },
+    {
+        "username": "Terrence Meikle",
+        "email": "terrencemeikle@gmail.com",
+        "password": "123456789"
+    },
+    {
+        "username": "Jeffery Pastva",
+        "email": "jefferypastva@gmail.com",
+        "password": "123456789"
+    },
+    {
+        "username": "Random McRandomer",
+        "email": "islifeevenreal@gmail.com",
+        "password": "123456789"
+    }
+]
