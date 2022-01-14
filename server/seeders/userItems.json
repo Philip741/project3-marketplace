@@ -1,0 +1,15 @@
+[
+    {
+        "name": "Big Car",
+        "description": "Runs good",
+        "price": 1800,
+        "itemPoster": "ZacharyMoore"
+        
+    },
+    {
+        "name": "Bigger Car",
+        "description": "Runs gooder",
+        "price": 1900,
+        "itemPoster": "ZacharyMoore"
+    }
+]
