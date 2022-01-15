@@ -23,13 +23,14 @@ const userSchema = new Schema({
         minlength: 8
     },
     
-    //this is to reference items for particular user
-    // items: [
-    //     {
-    //         type: Schema.Types.ObjectId,
-    //         ref: 'Item'
-    //     },
-    // ],
+    // this is to reference items for particular user
+    // this creates a 
+    items: [
+        {
+            type: Schema.Types.ObjectId,
+            ref: 'Item'
+        },
+    ],
 });
 
 userSchema.pre('save', async function (next) {
