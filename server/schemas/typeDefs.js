@@ -1,27 +1,24 @@
-const { gql } = require('apollo-server-express');
+const { gql } = require("apollo-server-express");
 
-const typeDefs = gql `
-    type User {
-        _id: ID
-        username: String
-        email: String
-        password: String
-        items: [Item]!
-    }
+export const typeDefs = gql`
+  type User {
+    username: String!
+    email: String!
+    password: String!
+    item: [Item]!
+  }
 
-    type Item {
-        _id: ID
-        name: String
-        description: String
-        price: Int
-        itemPoster: String
-    }
-
-    type Auth {
+  type Item {
+    _id: ID
+    name: String!
+    description: String!
+    price: Number!
+  }
+  type Auth {
         token: ID!
         user: User
     }
-
+ 
     type Query {
         users: [User]
         user(username: String!): User
@@ -37,7 +34,8 @@ const typeDefs = gql `
 
 `;
 
-module.exports = typeDefs;
+
+//module.exports = typeDefs;
 
 
 // Use this query to get all users and all item Ids associated with each individual user
@@ -99,3 +97,4 @@ module.exports = typeDefs;
 //     "password": "123456789",
 //     "email": "Whoknows@gmail.com"
 //   }
+
