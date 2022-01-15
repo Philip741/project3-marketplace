@@ -6,6 +6,8 @@ import MainSection from './components/Main/MainSection';
 import SignUp from './components/SignUp/SignUp';
 import Aside from './components/Aside/aside';
 
+//test//
+
 function App() {
   const [modalIsShow, setModalIsShown] = useState(false);
 
@@ -22,12 +24,29 @@ function App() {
     setModalIsShown(false);
   };
 
+  const logInSubmitHandler = (logInInfo) => {
+    console.log(logInInfo);
+  };
+
+  const signUpSubmitHandler = (signUpInfo) => {
+    console.log(signUpInfo);
+  };
+
   return (
     <Fragment>
-      {modalIsShow && <SignUp onClose={hideModalhandler} />}
-      <Header onSignup={showModalHandler} onLogIn={logInHandler} />
+      {modalIsShow && (
+        <SignUp
+          onClose={hideModalhandler}
+          onSignUpSubmit={signUpSubmitHandler}
+        />
+      )}
+      <Header
+        onSignup={showModalHandler}
+        onLogIn={logInHandler}
+        onLogInSubmit={logInSubmitHandler}
+      />
       <MainSection>
-             <Aside />
+        <Aside />
       </MainSection>
       <Footer />
     </Fragment>
