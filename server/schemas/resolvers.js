@@ -49,7 +49,7 @@ const resolvers = {
                   })
 
                   await User.findOneAndUpdate(
-                      {_id: context.user.id},
+                      {_id: context.user._id},
                       { $addToSet: {items: item._id}}
                   )
 
@@ -57,10 +57,11 @@ const resolvers = {
               }
 
               throw new AuthenticationError("YO YOU GOTTA BE LOGGED IN TO POST DA STUFF FOR DA SALE")
-          }
-
+          },
+        //   removeItem: async(parent, {itemId} )
 
     }
 };
 
 module.exports = resolvers;
+
