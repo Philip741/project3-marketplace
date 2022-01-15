@@ -24,12 +24,29 @@ function App() {
     setModalIsShown(false);
   };
 
+  const logInSubmitHandler = (logInInfo) => {
+    console.log(logInInfo);
+  };
+
+  const signUpSubmitHandler = (signUpInfo) => {
+    console.log(signUpInfo);
+  };
+
   return (
     <Fragment>
-      {modalIsShow && <SignUp onClose={hideModalhandler} />}
-      <Header onSignup={showModalHandler} onLogIn={logInHandler} />
+      {modalIsShow && (
+        <SignUp
+          onClose={hideModalhandler}
+          onSignUpSubmit={signUpSubmitHandler}
+        />
+      )}
+      <Header
+        onSignup={showModalHandler}
+        onLogIn={logInHandler}
+        onLogInSubmit={logInSubmitHandler}
+      />
       <MainSection>
-             <Aside />
+        <Aside />
       </MainSection>
       <Footer />
     </Fragment>
