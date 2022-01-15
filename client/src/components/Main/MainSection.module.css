@@ -7,8 +7,6 @@
   width: 100px; /* A fixed width as the default */
 }
 
-
-
 .item + .item { 
   margin-left: 2%; 
 }
