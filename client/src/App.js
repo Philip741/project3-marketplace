@@ -4,6 +4,7 @@ import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import MainSection from './components/Main/MainSection';
 import SignUp from './components/SignUp/SignUp';
+import Aside from './components/Aside/aside';
 
 function App() {
   const [modalIsShow, setModalIsShown] = useState(false);
@@ -25,7 +26,9 @@ function App() {
     <Fragment>
       {modalIsShow && <SignUp onClose={hideModalhandler} />}
       <Header onSignup={showModalHandler} onLogIn={logInHandler} />
-      <MainSection />
+      <MainSection>
+             <Aside />
+      </MainSection>
       <Footer />
     </Fragment>
   );
