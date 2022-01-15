@@ -8,36 +8,40 @@ const resolvers = {
             return User.find().populate("Item")
         },
         user: async (parent, { username }) => {
-            return User.findone({ username }).populate("Item")
+            return User.findOne({ username }).populate("Item")
+        },
+        items: async (parent, { username }) => {
+            const params = username ? { username } : {}
+            return Item.find(params)
         }
     },
 
-    // Mutation: {
-    //     addUser: async (parent, { username, email, password }) => {
-    //         const user = await User.create({ username, email, password });
-    //         const token = signToken(user);
-    //         return { token, user };
-    //       },
-    //       login: async (parent, { email, password }) => {
-    //         const user = await User.findOne({ email });
+    Mutation: {
+        addUser: async (parent, { username, email, password }) => {
+            const user = await User.create({ username, email, password });
+            const token = signToken(user);
+            return { token, user };
+          },
+          login: async (parent, { email, password }) => {
+            const user = await User.findOne({ email });
       
-    //         if (!user) {
-    //           throw new AuthenticationError('No user found with this email address');
-    //         }
+            if (!user) {
+              throw new AuthenticationError('No user found with this email address');
+            }
       
-    //         const correctPw = await user.isCorrectPassword(password);
+            const correctPw = await user.isCorrectPassword(password);
       
-    //         if (!correctPw) {
-    //           throw new AuthenticationError('Incorrect credentials');
-    //         }
+            if (!correctPw) {
+              throw new AuthenticationError('Incorrect credentials');
+            }
       
-    //         const token = signToken(user);
+            const token = signToken(user);
       
-    //         return { token, user };
-    //       },
+            return { token, user };
+          },
 
 
-    // }
+    }
 };
 
 module.exports = resolvers;
