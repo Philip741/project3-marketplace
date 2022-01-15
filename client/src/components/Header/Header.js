@@ -1,33 +1,45 @@
-// import { useState } from 'react';
+import { useState } from 'react';
 
 import classes from './Header.module.css';
 
 function Header(props) {
-  // const [enteredUsername, setEnteredUsername] = useState('');
-  // const [enteredPassword, setEnteredPassword] = useState('');
+  const [enteredUsername, setEnteredUsername] = useState('');
+  const [enteredPassword, setEnteredPassword] = useState('');
 
-  // const usernameHandler = (e) => {
-  //   e.preventDefault();
-  //   console.log(e);
-  //   console.log(e.target.value);
-  // };
+  const usernameHandler = (e) => {
+    setEnteredUsername(e.target.value);
+  };
 
-  // const passwordhandler = (e) => {
-  //   e.preventDefault();
-  //   console.log(e.target.value);
-  // };
+  const passwordhandler = (e) => {
+    setEnteredPassword(e.target.value);
+  };
+
+  const submitHandler = (e) => {
+    e.preventDefault();
+
+    const loginData = {
+      username: enteredUsername,
+      password: enteredPassword,
+    };
+
+    props.onLogInSubmit(loginData);
+    setEnteredUsername('');
+    setEnteredPassword('');
+  };
 
   return (
     <header className={classes.header}>
       <nav className={classes['header_nav']}>
         <h1 className={classes['header_title']}>Marketocracy</h1>
-        <form className={classes['header_login-form']}>
+        <form onSubmit={submitHandler} className={classes['header_login-form']}>
           <div className={classes['header_login-form_div']}>
             <input
               className={classes.input}
               type="text"
               id="username"
               placeholder="Username"
+              onChange={usernameHandler}
+              value={enteredUsername}
             />
           </div>
           <div className={classes['header_login-form_div']}>
@@ -36,6 +48,8 @@ function Header(props) {
               type="password"
               id="password"
               placeholder="Password"
+              onChange={passwordhandler}
+              value={enteredPassword}
             />
           </div>
           <button className={classes.button} type="submit" vlaue="submit">
