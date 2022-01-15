@@ -39,6 +39,25 @@ const resolvers = {
       
             return { token, user };
           },
+          addItem: async (parent, { name, description, price }, context) => {
+              if(context.user) {
+                  const item = await Item.create ({
+                      name,
+                      description,
+                      price,
+                      itemPoster: context.user.username
+                  })
+
+                  await User.findOneAndUpdate(
+                      {_id: context.user.id},
+                      { $addToSet: {items: item._id}}
+                  )
+
+                  return item
+              }
+
+              throw new AuthenticationError("YO YOU GOTTA BE LOGGED IN TO POST DA STUFF FOR DA SALE")
+          }
 
 
     }

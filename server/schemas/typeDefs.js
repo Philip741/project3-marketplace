@@ -1,7 +1,8 @@
 const { gql } = require("apollo-server-express");
 
-export const typeDefs = gql`
+typeDefs = gql`
   type User {
+    _id: ID
     username: String!
     email: String!
     password: String!
@@ -12,30 +13,30 @@ export const typeDefs = gql`
     _id: ID
     name: String!
     description: String!
-    price: Number!
+    price: Int
   }
   type Auth {
         token: ID!
         user: User
     }
  
-    type Query {
+  type Query {
         users: [User]
         user(username: String!): User
         items(username: String): [Item]
         item(itemId: ID!): Item
         me: User
     }
-
-    type Mutation {
+   type Mutation {
         addUser(username: String!, email: String!, password: String!): Auth
         login(email: String!, password: String!): Auth
+        addItem(name: String!, description: String!, price: Int!): Item
     }
 
 `;
 
 
-//module.exports = typeDefs;
+module.exports = typeDefs;
 
 
 // Use this query to get all users and all item Ids associated with each individual user
