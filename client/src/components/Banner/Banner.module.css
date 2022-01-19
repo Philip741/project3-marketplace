@@ -1,0 +1,32 @@
+.header-image {
+  /* width: 100%; */
+  display: flex;
+  justify-content: space-between;
+  z-index: 0;
+  overflow: hidden;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  text-align: right;
+  background: rgba(236, 214, 16, 0.712);
+  margin-top: 5px;
+  border-radius: 3% 0 0 3%;
+  align-items: center;
+}
+
+.header-image p {
+  font-weight: bold;
+  margin: 1em;
+  align-content: center;
+}
+
+.header-image img {
+  width: 70%;
+  /* height: 100%; */
+  /* overflow: auto; */
+  object-fit: cover;
+
+  /* text-align: right; */
+  /* transform: rotateZ(-5deg) translateY(-4rem) translateX(-1rem); */
+}
