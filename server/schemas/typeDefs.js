@@ -12,9 +12,11 @@ typeDefs = gql`
   type Item {
     _id: ID
     itemPoster: String
+    category: String
     name: String
     description: String
     price: Int
+    isSold: Boolean
   }
   type Auth {
     token: ID!
