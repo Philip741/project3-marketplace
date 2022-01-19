@@ -1,6 +1,6 @@
 const { gql } = require("apollo-server-express");
 
-export const typeDefs = gql`
+const typeDefs = gql`
   type User {
     username: String!
     email: String!
@@ -10,33 +10,30 @@ export const typeDefs = gql`
 
   type Item {
     _id: ID
-    name: String!
-    description: String!
-    price: Number!
+    name: String
+    description: String
+    price: Int
   }
   type Auth {
-        token: ID!
-        user: User
-    }
- 
-    type Query {
-        users: [User]
-        user(username: String!): User
-        items(username: String): [Item]
-        item(itemId: ID!): Item
-        me: User
-    }
+    token: ID!
+    user: User
+  }
 
-    type Mutation {
-        addUser(username: String!, email: String!, password: String!): Auth
-        login(email: String!, password: String!): Auth
-    }
+  type Query {
+    users: [User]
+    user(username: String!): User
+    items(username: String): [Item]
+    item(username: String!): Item
+    me: User
+  }
 
+  type Mutation {
+    addUser(username: String!, email: String!, password: String!): Auth
+    login(email: String!, password: String!): Auth
+  }
 `;
 
-
-//module.exports = typeDefs;
-
+module.exports = typeDefs;
 
 // Use this query to get all users and all item Ids associated with each individual user
 // query users {
@@ -52,18 +49,17 @@ export const typeDefs = gql`
 // THis pulls up uses and the item id but not other information associated with them
 // query user($username: String!) {
 //     user(username: $username) {
-//     _id 
+//     _id
 //     username
 //     email
 //       items {
 //         _id
 //         price
 //         description
-        
+
 //       }
 //     }
 //   }
-
 
 //Login
 // mutation login($email:String! , $password:String!){
@@ -97,4 +93,3 @@ export const typeDefs = gql`
 //     "password": "123456789",
 //     "email": "Whoknows@gmail.com"
 //   }
-
