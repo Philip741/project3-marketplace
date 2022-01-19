@@ -1,20 +1,26 @@
-const {AuthenticationError} = require('apollo-server-express');
-const { User, Item } = require('../models');
-const { signToken } = require('../utils/auth');
+const { AuthenticationError } = require("apollo-server-express");
+const { User, Item } = require("../models");
+const { signToken } = require("../utils/auth");
 
 const resolvers = {
-    Query: {
-        users: async () => {
-            return User.find().populate("Item")
-        },
-        user: async (parent, { username }) => {
-            return User.findOne({ username }).populate("Item")
-        },
-        items: async (parent, { username }) => {
-            const params = username ? { username } : {}
-            return Item.find(params)
-        }
+  Query: {
+    users: async () => {
+      return User.find().populate("Item");
     },
+    user: async (parent, { username }) => {
+      return User.findOne({ username }).populate("Item");
+    },
+    items: async (parent, { username }) => {
+      const params = username ? { username } : {};
+      return Item.find(params);
+    },
+    item: async (parent, { username }) => {
+      const params = username ? { username } : {};
+      const currentItem = await Item.findOne(params);
+      console.log(currentItem);
+      return currentItem;
+    },
+  },
 
     Mutation: {
         addUser: async (parent, { username, email, password }) => {
@@ -57,11 +63,10 @@ const resolvers = {
               }
 
               throw new AuthenticationError("YO YOU GOTTA BE LOGGED IN TO POST DA STUFF FOR DA SALE")
-          },
+          }
         //   removeItem: async(parent, {itemId} )
-
-    }
-};
+        }      
+}
 
 module.exports = resolvers;
 

@@ -1,0 +1,29 @@
+.profile-header__temp {
+  display: flex;
+  height: 150px;
+  width: 100vw;
+}
+
+.profile-header__temp div {
+  height: 100%;
+  width: 100%;
+}
+
+.profile-header__temp__flexDiv h2 {
+  position: absolute;
+  left: 30px;
+  top: 100px;
+}
+
+.profile-header__temp img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.profile-main {
+  height: 100%;
+  flex: auto;
+  background-color: rgb(245, 227, 203);
+}

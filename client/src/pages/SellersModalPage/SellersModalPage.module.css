@@ -1,0 +1,30 @@
+.sellersModal {
+  position: absolute;
+  height: 90%;
+  width: 90%;
+  margin: 10px auto;
+  /* top: 20vh;
+  left: 30vw; */
+  /* background-color: rosybrown; */
+  overflow: auto;
+}
+
+.usernameDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sectionOne {
+  border-bottom: 1px solid black;
+}
+
+.usernameDiv h1 {
+  /* display: inline-block; */
+  margin: auto;
+  font-size: 3em;
+}
+
+.usernameDiv_button {
+  margin: 20px auto;
+}

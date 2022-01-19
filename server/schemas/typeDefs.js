@@ -16,23 +16,23 @@ typeDefs = gql`
     price: Int
   }
   type Auth {
-        token: ID!
-        user: User
-    }
- 
-  type Query {
-        users: [User]
-        user(username: String!): User
-        items(username: String): [Item]
-        item(itemId: ID!): Item
-        me: User
-    }
-   type Mutation {
-        addUser(username: String!, email: String!, password: String!): Auth
-        login(email: String!, password: String!): Auth
-        addItem(name: String!, description: String!, price: Int!): Item
-    }
+    token: ID!
+    user: User
+  }
 
+  type Query {
+    users: [User]
+    user(username: String!): User
+    items(username: String): [Item]
+    item(username: String!): Item
+    me: User
+  }
+
+  type Mutation {
+    addUser(username: String!, email: String!, password: String!): Auth
+    login(email: String!, password: String!): Auth
+    addItem(name: String!,description: String!, price: Int): Auth
+  }
 `;
 
 
@@ -53,18 +53,17 @@ module.exports = typeDefs;
 // THis pulls up uses and the item id but not other information associated with them
 // query user($username: String!) {
 //     user(username: $username) {
-//     _id 
+//     _id
 //     username
 //     email
 //       items {
 //         _id
 //         price
 //         description
-        
+
 //       }
 //     }
 //   }
-
 
 //Login
 // mutation login($email:String! , $password:String!){
@@ -98,4 +97,3 @@ module.exports = typeDefs;
 //     "password": "123456789",
 //     "email": "Whoknows@gmail.com"
 //   }
-
