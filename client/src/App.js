@@ -1,10 +1,10 @@
-import { Fragment, useState } from 'react';
+import { Fragment, useState } from "react";
 
-import Header from './components/Header/Header';
-import Footer from './components/Footer/Footer';
-import MainSection from './components/Main/MainSection';
-import SignUp from './components/SignUp/SignUp';
-import Aside from './components/Aside/aside';
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
+import MainSection from "./components/Main/MainSection";
+import SignUp from "./components/SignUp/SignUp";
+import Aside from "./components/Aside/aside";
 
 //test//
 
