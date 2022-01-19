@@ -6,11 +6,12 @@ typeDefs = gql`
     username: String
     email: String
     password: String
-    items: [Item]!
+    items: [Item]
   }
 
   type Item {
     _id: ID
+    itemPoster: String
     name: String
     description: String
     price: Int
@@ -24,7 +25,7 @@ typeDefs = gql`
     users: [User]
     user(username: String!): User
     items(username: String): [Item]
-    item(username: String!): Item
+    item(itemId: ID!): Item
     me: User
   }
 
