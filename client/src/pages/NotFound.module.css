@@ -1,0 +1,9 @@
+.centered {
+  margin: 30vh auto;
+  font-weight: bold;
+  font-size: 50px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

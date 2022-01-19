@@ -1,18 +1,24 @@
 import classes from './MainSection.module.css';
-import Aside from '../Aside/aside';
-function MainSection() {
+import SaleItems from '../SaleItems/SaleItems';
+import Banner from '../Banner/Banner';
+// import Aside from '../Aside/Aside';
+// import Banner from '../Banner/Banner';
+
+function MainSection(props) {
+  // console.log(props.photoData);
   return (
-    <main>
-      <div className={classes.main}>
-         <div className={classes.item}>
-             <Aside />
-        </div>
-        <div className={classes.item}>
-             <h1>This is for the main section to include the Aside </h1>
-        </div>
-        <div className={classes.item}>
-        test right column
-        </div>
+    <main className={classes.main}>
+      <Banner className={classes.one} />
+      <div className={classes.two}>
+        this is the aside
+        <div>Category</div>
+        <div>Category</div>
+        <div>Category</div>
+      </div>
+      <div className={classes.three}>
+        {/* <div className={classes.sale}> */}
+        <SaleItems photoData={props.photoData} />
+        {/* </div> */}
       </div>
     </main>
   );
