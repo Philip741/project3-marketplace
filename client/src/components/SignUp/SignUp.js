@@ -73,11 +73,11 @@ function SignUp(props) {
             value={retypedPassword}
             onChange={retypedPasswordhandler}
           />
-
           <button className={classes.button} type="submit">
             SIGN ME UP
           </button>
-          {/* <input type="submit" name="signup_submit" value="Sign me up" /> */}
+
+          {/* <button type="submit" name="signup_submit" value="Sign me up" /> */}
         </form>
 
         <div className={classes.right}>
