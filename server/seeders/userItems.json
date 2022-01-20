@@ -4,13 +4,22 @@
     "description": "Runs good",
     "price": 1800,
     "itemPoster": "ZacharyMoore",
-    "username": "ZacharyMoore"
+    "username": "ZacharyMoore",
+    "category": "Automotive"
   },
   {
     "name": "Bigger Car",
     "description": "Runs gooder",
     "price": 1900,
     "itemPoster": "ZacharyMoore",
-    "username": "ZacharyMoore"
+    "username": "ZacharyMoore",
+    "category": "Automotive"
+  },
+  {
+    "name": "Coffee Maker",
+    "description": "Lightly used black and decker coffe pot.",
+    "price": 25,
+    "itemPoster": "PhillipBrowning",
+    "category": "Appliances"
   }
 ]
