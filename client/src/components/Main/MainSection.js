@@ -8,17 +8,23 @@ function MainSection(props) {
   // console.log(props.photoData);
   return (
     <main className={classes.main}>
-      <Banner className={classes.one} />
-      <div className={classes.two}>
-        this is the aside
+      
+      <div className={classes.aside}>
         <div>Category</div>
         <div>Category</div>
         <div>Category</div>
       </div>
+      <div className={classes.banner}>
+      <Banner  />
+      
+      </div>
+      
       <div className={classes.three}>
-        {/* <div className={classes.sale}> */}
+      <div className={classes.category}><h2>Automotive</h2></div>
+        
         <SaleItems photoData={props.photoData} />
-        {/* </div> */}
+       
+      
       </div>
     </main>
   );

@@ -4,15 +4,16 @@
   justify-content: space-between;
   z-index: 0;
   overflow: hidden;
-  grid-column-start: 2;
+  /* grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 1;
-  grid-row-end: 2;
+  grid-row-end: 2; */
   text-align: right;
-  background: rgba(236, 214, 16, 0.712);
+  background-color: #FFE57F;
   margin-top: 5px;
   border-radius: 3% 0 0 3%;
   align-items: center;
+  height: 10vh;
 }
 
 .header-image p {
