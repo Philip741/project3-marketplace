@@ -45,6 +45,10 @@ const resolvers = {
 
       return { token, user };
     },
+    logout: async (parent, args, context) => {
+      context.user = undefined;
+      return true;
+    },
   },
 };
 
