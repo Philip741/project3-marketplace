@@ -1,34 +1,86 @@
+
+
 .main {
   display: grid;
   /* height: 70vh; */
-  grid-template-columns: 20vw 80vw;
-  grid-template-rows: 10vh 90vh;
-  gap: 1em;
+   /* grid-template-columns: 20vw 80vw; 
+  grid-template-rows: 10vh 90vh;  */
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 10rem repeat(12, minmax(100px,1fr));
+  gap: 1em; 
+  
 }
-.one {
-  /* grid-column-start: 2;
-  grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 2; */
+
+.aside {
+  width: 15vw; 
+  /* grid-column: 1 / 1;
+  grid-row: 1/ 1;*/
+  grid-row: 1/-1;
+  background-color: rgba(250, 248, 233, 0.925);
+  color: black;
+  /* border-right: 1px solid black; */
+  margin: 0px 0 0 2px; 
 }
-.two {
-  width: 20vw;
-  /* height: 80vh; */
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 3;
-  background: blue;
-  border-radius: 3%;
-  color: white;
-  margin: 5px 0 0 2px;
+
+.asideTitle {
+  margin-top: 10%;
+  margin-bottom: 2%;
+  font-size: x-large;
 }
-.three {
+
+.banner {
+  grid-column: 2/ span last-line;
+  grid-row: 1 /1;
+  
+  
+}
+.automotive {
+  /* margin-top: 5px; */
   display: flex;
-  border-radius: 3%;
-  background: rgb(243, 238, 238);
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 3;
+  grid-column: 2/-1;
+  grid-row: 2;
+  background-color: rgb(255 251 235); 
+  flex-direction: row;
+  flex-wrap: wrap; 
+  justify-self: top;
+  
 }
+
+.furniture {
+  /* margin-top: 5px; */
+  display: flex;
+  grid-column: 2/-1;
+  grid-row: 3;
+  background-color: rgb(255 251 235);
+  flex-direction: row;
+  flex-wrap: wrap; 
+  justify-self: auto;
+  
+}
+
+.sportingGoods {
+  /* margin-top: 5px; */
+  display: flex;
+  grid-column: 2/-1;
+  grid-row: 4;
+  background-color: rgb(255 251 235);
+  flex-direction: row;
+  flex-wrap: wrap; 
+  justify-self: auto;
+  
+}
+.category {
+ margin-top: 30px;
+ font-size: x-large;
+ color: black;
+ flex-basis: 100%;
+ margin-left: 20px;
+}
+
+.category > h1 {
+  color: rgb(100 56 16);
+}
+
+
+
+
