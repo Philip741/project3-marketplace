@@ -37,12 +37,11 @@ typeDefs = gql`
     addUser(username: String!, email: String!, password: String!): Auth
     login(email: String!, password: String!): Auth
     addItem(name: String!,description: String!, price: Int, category: String): Item
+    logout: Boolean
   }
 `;
 
-
 module.exports = typeDefs;
-
 
 // Use this query to get all users and all item Ids associated with each individual user
 // query users {
