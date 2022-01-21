@@ -12,12 +12,14 @@ import AddSaleItem from './components/SaleItems/AddSaleItem/AddSaleItem';
 import SellersModalPage from './pages/SellersModalPage/SellersModalPage';
 import NotFound from './pages/NotFound';
 
+
 // const client = new ApolloClient({
 //   uri: '/graphql',
 //   cache: new InMemoryCache(),
 // });
 
 function App() {
+
   const [modalIsShow, setModalIsShown] = useState(false);
   const [photos, setPhotos] = useState([]);
 
@@ -70,6 +72,7 @@ function App() {
             onClickMe={fetchphotos}
           />
           <MainSection photoData={photos} />
+          
         </Route>
         <Route path="/profile-page">
           <ProfilePage />
@@ -85,6 +88,7 @@ function App() {
         </Route>
       </Switch>
       {/* </ApolloProvider> */}
+     
     </Fragment>
   );
 }
