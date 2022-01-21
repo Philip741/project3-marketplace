@@ -5,10 +5,10 @@ const { signToken } = require("../utils/auth");
 const resolvers = {
   Query: {
     users: async () => {
-      return User.find().populate("Item");
+      return User.find().populate("items");
     },
     user: async (parent, { username }) => {
-      return User.findOne({ username }).populate("Item");
+      return User.findOne({ username }).populate("items");
     },
     items: async (parent, { username }) => {
       const params = username ? { username } : {};
@@ -42,6 +42,25 @@ const resolvers = {
       }
 
       const token = signToken(user);
+
+      return { token, user };
+    },
+    addItem: async (parent, { name, description, price }, context) => {
+      if (context.user) {
+        const item = await Item.create({
+          name,
+          description,
+          price,
+          itemPoster: context.user.username,
+        });
+
+        await User.findOneAndUpdate(
+          { _id: context.user._id },
+          { $addToSet: { items: item._id } }
+        );
+
+        return item;
+      }
 
       return { token, user };
     },
