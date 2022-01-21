@@ -10,6 +10,9 @@ const resolvers = {
     user: async (parent, { username }) => {
       return User.findOne({ username }).populate("items");
     },
+    category: async (parent, { category }) => {
+      return Item.find({category}).populate("items")
+    },
     items: async (parent, { username }) => {
       const params = username ? { username } : {};
       return Item.find(params);
@@ -45,12 +48,13 @@ const resolvers = {
       
             return { token, user };
           },
-          addItem: async (parent, { name, description, price }, context) => {
+          addItem: async (parent, { name, description, price, category }, context) => {
               if(context.user) {
                   const item = await Item.create ({
                       name,
                       description,
                       price,
+                      category,
                       itemPoster: context.user.username
                   })
 
@@ -64,7 +68,6 @@ const resolvers = {
 
               throw new AuthenticationError("YO YOU GOTTA BE LOGGED IN TO POST DA STUFF FOR DA SALE")
           }
-        //   removeItem: async(parent, {itemId} )
         }      
 }
 

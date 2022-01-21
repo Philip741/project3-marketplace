@@ -12,12 +12,13 @@ typeDefs = gql`
   type Item {
     _id: ID
     itemPoster: String
-    category: String
+    category: String,
     name: String
     description: String
     price: Int
     isSold: Boolean
   }
+
   type Auth {
     token: ID!
     user: User
@@ -26,6 +27,7 @@ typeDefs = gql`
   type Query {
     users: [User]
     user(username: String!): User
+    category(category: String!): [Item]
     items(username: String): [Item]
     item(itemId: ID!): Item
     me: User
@@ -34,7 +36,7 @@ typeDefs = gql`
   type Mutation {
     addUser(username: String!, email: String!, password: String!): Auth
     login(email: String!, password: String!): Auth
-    addItem(name: String!,description: String!, price: Int): Item
+    addItem(name: String!,description: String!, price: Int, category: String): Item
   }
 `;
 
