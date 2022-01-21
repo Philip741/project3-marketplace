@@ -115,6 +115,30 @@ function SaleItems() {
           <img src={car1} alt="" />
         </Link>
       </div>
+      <div className={classes.test}>
+        <Link to="/profile-page">
+          {' '}
+          <img src={car1} alt="" />
+        </Link>
+      </div>
+      <div className={classes.test}>
+        <Link to="/profile-page">
+          {' '}
+          <img src={car1} alt="" />
+        </Link>
+      </div>
+      <div className={classes.test}>
+        <Link to="/profile-page">
+          {' '}
+          <img src={car1} alt="" />
+        </Link>
+      </div>
+      <div className={classes.test}>
+        <Link to="/profile-page">
+          {' '}
+          <img src={car1} alt="" />
+        </Link>
+      </div>
     </Fragment>
   );
 }
