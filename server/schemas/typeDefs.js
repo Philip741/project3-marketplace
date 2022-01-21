@@ -1,4 +1,4 @@
-const { gql } = require("apollo-server-express");
+const { gql } = require('apollo-server-express');
 
 typeDefs = gql`
   type User {
@@ -34,13 +34,12 @@ typeDefs = gql`
   type Mutation {
     addUser(username: String!, email: String!, password: String!): Auth
     login(email: String!, password: String!): Auth
-    addItem(name: String!,description: String!, price: Int): Item
+    logout: Boolean
+    addItem(name: String!, description: String!, price: Int): Item
   }
 `;
 
-
 module.exports = typeDefs;
-
 
 // Use this query to get all users and all item Ids associated with each individual user
 // query users {
