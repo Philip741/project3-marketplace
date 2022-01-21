@@ -22,51 +22,53 @@ const resolvers = {
     },
   },
 
-    Mutation: {
-        addUser: async (parent, { username, email, password }) => {
-            const user = await User.create({ username, email, password });
-            const token = signToken(user);
-            return { token, user };
-          },
-          login: async (parent, { email, password }) => {
-            const user = await User.findOne({ email });
-      
-            if (!user) {
-              throw new AuthenticationError('No user found with this email address');
-            }
-      
-            const correctPw = await user.isCorrectPassword(password);
-      
-            if (!correctPw) {
-              throw new AuthenticationError('Incorrect credentials');
-            }
-      
-            const token = signToken(user);
-      
-            return { token, user };
-          },
-          addItem: async (parent, { name, description, price }, context) => {
-              if(context.user) {
-                  const item = await Item.create ({
-                      name,
-                      description,
-                      price,
-                      itemPoster: context.user.username
-                  })
+  Mutation: {
+    addUser: async (parent, { username, email, password }) => {
+      const user = await User.create({ username, email, password });
+      const token = signToken(user);
+      return { token, user };
+    },
+    login: async (parent, { email, password }) => {
+      const user = await User.findOne({ email });
 
-                  await User.findOneAndUpdate(
-                      {_id: context.user._id},
-                      { $addToSet: {items: item._id}}
-                  )
+      if (!user) {
+        throw new AuthenticationError("No user found with this email address");
+      }
 
-                  return item
-              }
+      const correctPw = await user.isCorrectPassword(password);
 
-              throw new AuthenticationError("YO YOU GOTTA BE LOGGED IN TO POST DA STUFF FOR DA SALE")
-          }
-        //   removeItem: async(parent, {itemId} )
-        }      
-}
+      if (!correctPw) {
+        throw new AuthenticationError("Incorrect credentials");
+      }
+
+      const token = signToken(user);
+
+      return { token, user };
+    },
+    addItem: async (parent, { name, description, price }, context) => {
+      if (context.user) {
+        const item = await Item.create({
+          name,
+          description,
+          price,
+          itemPoster: context.user.username,
+        });
+
+        await User.findOneAndUpdate(
+          { _id: context.user._id },
+          { $addToSet: { items: item._id } }
+        );
+
+        return item;
+      }
+
+      return { token, user };
+    },
+    logout: async (parent, args, context) => {
+      context.user = undefined;
+      return true;
+    },
+  },
+};
 
 module.exports = resolvers;
-
