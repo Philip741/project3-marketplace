@@ -3,6 +3,7 @@ import { useCurrentUserContext } from '../../context/auth-context';
 
 import SellersModal from '../../components/UI/SellersModal/SellersModal';
 import classes from './SellersModalPage.module.css';
+import car1 from '../../components/assets/images/test_item-1_car.jpg';
 
 function SellersModalPage(props) {
   const data = JSON.parse(localStorage.getItem('item') || {});
@@ -13,7 +14,7 @@ function SellersModalPage(props) {
       <div className={classes.sellersModal}>
         <section className={classes.sectionOne}>
           <div className={classes.usernameDiv}>
-            <h1>USER's NAME</h1>
+            <h1>{data?.itemPoster}</h1>
             <div className={classes.buttonDiv}>
               <Link
                 className={classes['usernameDiv_button']}
@@ -29,17 +30,24 @@ function SellersModalPage(props) {
         </section>
 
         <section>
-          <h2>Marketocracy Listings</h2>
-          <div>all listings here</div>
-          {data && (
-            <div className={classes.test}>
-              <p>$ {data?.price}</p>
-              <p>{data?.name}</p>
-              <p>{data?.description}</p>
-              <p>{data?.itemPoster}</p>
-              <p>{data?.category}</p>
-            </div>
-          )}
+          <h2 className={classes['heading_h2']}>Marketocracy Listing</h2>
+          <div>
+            <h3 className={classes['heading_h3']}>Listing</h3>
+            {data && (
+              <div className={classes['listing_info-div']}>
+                <div className={classes.imgDiv}>
+                  <img src={data.imgUrl} alt="" />
+                </div>
+                <div className={classes.infoDiv}>
+                  <p> Cost: ${data?.price}</p>
+                  <p>Title: {data?.name}</p>
+                  <p>Description: {data?.description}</p>
+                  {/* <p>{data?.itemPoster}</p> */}
+                  <p>Category: {data?.category}</p>
+                </div>
+              </div>
+            )}
+          </div>
         </section>
       </div>
     </SellersModal>
