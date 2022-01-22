@@ -23,5 +23,8 @@
   "homepage": "https://github.com/PhilipBrowning/project3-marketplace#readme",
   "devDependencies": {
     "concurrently": "^7.0.0"
+  },
+  "dependencies": {
+    "graphql": "^16.2.0"
   }
 }
