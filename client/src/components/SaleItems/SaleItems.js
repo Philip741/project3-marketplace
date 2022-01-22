@@ -34,24 +34,33 @@ function SaleItems() {
           data.items &&
           data.items.map((e, idx) => (
             <div className={classes.test} key={idx}>
-              <img src={car1} alt="" onClick={() => showDetailPage(e)} />
-              <p>$ {e?.price}</p>
-              <p>{e?.name}</p>
-              <p>{e?.description}</p>
+              <img
+                className={classes.img}
+                src={car1}
+                alt=""
+                onClick={() => showDetailPage(e)}
+              />
+              <div className={classes.imgDiv}>
+                <p>$ {e?.price}</p>
+                <p>{e?.name}</p>
+              </div>
+              {/* <p>{e?.description}</p>
               <p>{e?.itemPoster}</p>
-              <p>{e?.category}</p>
+              <p>{e?.category}</p> */}
             </div>
           ))
         : data &&
           data.items &&
           data.items.map((e, idx) => (
             <div className={classes.test} key={idx}>
-              <img src={car1} alt="" />
-              <p>$ {e?.price}</p>
-              <p>{e?.name}</p>
-              <p>{e?.description}</p>
+              <img className={classes.img} src={car1} alt="" />
+              <div className={classes.imgDiv}>
+                <p>$ {e?.price}</p>
+                <p>{e?.name}</p>
+              </div>
+              {/* <p>{e?.description}</p>
               <p>{e?.itemPoster}</p>
-              <p>{e?.category}</p>
+              <p>{e?.category}</p> */}
             </div>
           ))}
     </Fragment>

@@ -67,7 +67,7 @@ function MainSection(props) {
 
       <div className={classes.automotive}>
         <div className={classes.category}>
-          <h1>Automotive</h1>
+          <h1>Today's Hot Deals!</h1>
         </div>
 
         <SaleItems saleItems={props.loadAllQuery} />
