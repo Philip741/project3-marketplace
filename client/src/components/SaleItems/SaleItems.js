@@ -16,14 +16,16 @@ function SaleItems() {
   const showDetailPage = (e) => {
     localStorage.setItem('item', JSON.stringify(e));
     history.push('/seller-modal');
+    console.log(e)
   };
 
   console.log('saleItmes page +++', data);
-
+  
   const {
     currentUser: { isLoggedIn },
   } = useCurrentUserContext();
   console.log(isLoggedIn);
+  
 
   return (
     <Fragment>
@@ -34,7 +36,7 @@ function SaleItems() {
           data.items &&
           data.items.map((e, idx) => (
             <div className={classes.test} key={idx}>
-              <img src={e.imgUrl} alt="" onClick={() => showDetailPage(e)} />
+              <img src={e?.imgUrl} alt="" onClick={() => showDetailPage(e)} />
               <div className={classes.imgDiv}>
                 <p>$ {e?.price}</p>
                 <p>{e?.name}</p>
@@ -43,12 +45,14 @@ function SaleItems() {
               <p>{e?.itemPoster}</p>
               <p>{e?.category}</p> */}
             </div>
+            
           ))
+          
         : data &&
           data.items &&
           data.items.map((e, idx) => (
             <div className={classes.test} key={idx}>
-              <img className={classes.img} src={e.imgUrl} alt="" />
+              <img className={classes.img} src= {e?.imgUrl} alt="" />
               <div className={classes.imgDiv}>
                 <p>$ {e?.price}</p>
                 <p>{e?.name}</p>

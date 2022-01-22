@@ -20,6 +20,9 @@ const itemSchema = new Schema({
   isSold: {
     type: Boolean,
     default: false,
+  },
+  imgUrl: {
+    type: String
   }
 
 
