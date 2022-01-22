@@ -1,14 +1,14 @@
-const { AuthenticationError } = require("apollo-server-express");
-const { User, Item } = require("../models");
-const { signToken } = require("../utils/auth");
+const { AuthenticationError } = require('apollo-server-express');
+const { User, Item } = require('../models');
+const { signToken } = require('../utils/auth');
 
 const resolvers = {
   Query: {
     users: async () => {
-      return User.find().populate("items");
+      return User.find().populate('items');
     },
     user: async (parent, { username }) => {
-      return User.findOne({ username }).populate("items");
+      return User.findOne({ username }).populate('items');
     },
     category: async (parent, { category }) => {
       return Item.find({category}).populate("items")
@@ -35,13 +35,13 @@ const resolvers = {
       const user = await User.findOne({ email });
 
       if (!user) {
-        throw new AuthenticationError("No user found with this email address");
+        throw new AuthenticationError('No user found with this email address');
       }
 
       const correctPw = await user.isCorrectPassword(password);
 
       if (!correctPw) {
-        throw new AuthenticationError("Incorrect credentials");
+        throw new AuthenticationError('Incorrect credentials');
       }
 
       const token = signToken(user);
@@ -65,12 +65,11 @@ const resolvers = {
         return item;
       }
 
-      return { token, user };
+      throw new AuthenticationError(
+        'YO YOU GOTTA BE LOGGED IN TO POST DA STUFF FOR DA SALE'
+      );
     },
-    logout: async (parent, args, context) => {
-      context.user = undefined;
-      return true;
-    },
+    //   removeItem: async(parent, {itemId} )
   },
 };
 
