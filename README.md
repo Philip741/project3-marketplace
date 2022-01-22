@@ -55,7 +55,6 @@
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
@@ -125,7 +124,7 @@ This is an example of how to list things you need to use the software and how to
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-
+U
 
 _For more examples, please refer to the [Documentation](https://github.com/PhilipBrowning/project3-marketplace)_
 
@@ -163,17 +162,6 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 * Jeffery Pastva  - jpastvait@gmail.com
 
 Project Link: [https://github.com/PhilipBrowning/project3-marketplace/](https://github.com/PhilipBrowning/project3-marketplace)
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-
-* []()
-* []()
-* []()
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
