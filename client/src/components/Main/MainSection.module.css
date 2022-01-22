@@ -1,25 +1,22 @@
-
-
 .main {
   display: grid;
   /* height: 70vh; */
-   /* grid-template-columns: 20vw 80vw; 
+  /* grid-template-columns: 20vw 80vw; 
   grid-template-rows: 10vh 90vh;  */
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 10rem repeat(12, minmax(100px,1fr));
-  gap: 1em; 
-  
+  grid-template-rows: 10rem repeat(12, minmax(100px, 1fr));
+  gap: 1em;
 }
 
 .aside {
-  width: 15vw; 
+  width: 15vw;
   /* grid-column: 1 / 1;
   grid-row: 1/ 1;*/
   grid-row: 1/-1;
   background-color: rgba(250, 248, 233, 0.925);
   color: black;
   /* border-right: 1px solid black; */
-  margin: 0px 0 0 2px; 
+  margin: 0px 0 0 2px;
 }
 
 .asideTitle {
@@ -29,21 +26,18 @@
 }
 
 .banner {
-  grid-column: 2/ span last-line;
+  grid-column: 2 / span last-line;
   grid-row: 1 /1;
-  
-  
 }
 .automotive {
   /* margin-top: 5px; */
   display: flex;
   grid-column: 2/-1;
   grid-row: 2;
-  background-color: rgb(255 251 235); 
+  background-color: rgb(255 251 235);
   flex-direction: row;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   justify-self: top;
-  
 }
 
 .furniture {
@@ -53,9 +47,8 @@
   grid-row: 3;
   background-color: rgb(255 251 235);
   flex-direction: row;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   justify-self: auto;
-  
 }
 
 .sportingGoods {
@@ -65,22 +58,17 @@
   grid-row: 4;
   background-color: rgb(255 251 235);
   flex-direction: row;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   justify-self: auto;
-  
 }
 .category {
- margin-top: 30px;
- font-size: x-large;
- color: black;
- flex-basis: 100%;
- margin-left: 20px;
+  margin-top: 30px;
+  font-size: x-large;
+  color: black;
+  flex-basis: 100%;
+  margin-left: 20px;
 }
 
 .category > h1 {
   color: rgb(100 56 16);
 }
-
-
-
-
