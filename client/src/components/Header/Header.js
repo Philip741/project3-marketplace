@@ -40,7 +40,6 @@ function Header(props) {
       handleSetCurrentUser({ ...data.login.user, isLoggedIn: true });
     } catch (e) {
       console.error('***error***', e);
-      // console.log(data.username);
     }
     // clear form values
     setFormState({
@@ -49,17 +48,24 @@ function Header(props) {
     });
   };
 
+  const logoutHandler = (e) => {
+    e.preventDefault();
+    Auth.logout();
+  };
+
   return (
     <header className={classes.header}>
       <nav className={classes['header_nav']}>
         <h1 className={classes['header_title']}>Marketocracy</h1>
 
         {isLoggedIn ? (
-          <div>
+          <div className={classes.nameLogout}>
             <p>
-              Welcme <span>{username}</span>
+              Welcome <span>{username}</span>
             </p>
-            <button>Logout</button>
+            <button onClick={logoutHandler} className={classes.button}>
+              Logout
+            </button>
           </div>
         ) : (
           <form
