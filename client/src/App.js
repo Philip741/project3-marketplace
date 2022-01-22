@@ -1,8 +1,21 @@
-// SHOULD NEED THIS TO TALK TO THE SERVER//
-// { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
+// import {
+//   ApolloClient,
+//   InMemoryCache,
+//   ApolloProvider,
+//   createHttpLink,
+// } from '@apollo/client';
+
+// import { setContext } from '@apollo/client/link/context';
+
+// import { useCurrentUserContext } from '../../context/auth-context';
+import { useCurrentUserContext } from './context/auth-context';
+import { useQuery } from '@apollo/client';
+// import { QUERY_LOAD_ALL } from '../../utils/queries';
+import { QUERY_LOAD_ALL } from './utils/queries';
 
 import { Fragment, useState } from 'react';
-import { Route, Switch, Redirect } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
+// import CurrentUserProvider from './context/auth-context';
 
 import Header from './components/Header/Header';
 import MainSection from './components/Main/MainSection';
@@ -12,16 +25,21 @@ import AddSaleItem from './components/SaleItems/AddSaleItem/AddSaleItem';
 import SellersModalPage from './pages/SellersModalPage/SellersModalPage';
 import NotFound from './pages/NotFound';
 
-
-// const client = new ApolloClient({
-//   uri: '/graphql',
-//   cache: new InMemoryCache(),
-// });
-
 function App() {
-
   const [modalIsShow, setModalIsShown] = useState(false);
-  const [photos, setPhotos] = useState([]);
+  const { loading, data } = useQuery(QUERY_LOAD_ALL);
+
+  console.log('data ++', data);
+
+  const loadAllQuery = {
+    loading,
+    data,
+  };
+
+  const {
+    currentUser: { isLoggedIn },
+  } = useCurrentUserContext();
+  console.log(isLoggedIn);
 
   const logInHandler = (e) => {
     console.log(e);
@@ -44,19 +62,10 @@ function App() {
     console.log(signUpInfo);
   };
 
-  function fetchphotos() {
-    fetch('https://picsum.photos/v2/list')
-      .then((response) => {
-        return response.json();
-      })
-      .then((data) => {
-        setPhotos(data);
-      });
-  }
-
   return (
     <Fragment>
-      {/* <ApolloProvider client = {client}> */}
+      {/* <ApolloProvider client={client}> */}
+      {/* <CurrentUserProvider> */}
       <Switch>
         <Route path="/" exact>
           {modalIsShow && (
@@ -69,10 +78,8 @@ function App() {
             onSignup={showModalHandler}
             onLogIn={logInHandler}
             onLogInSubmit={logInSubmitHandler}
-            onClickMe={fetchphotos}
           />
-          <MainSection photoData={photos} />
-          
+          <MainSection loadAllQuery={loadAllQuery} />
         </Route>
         <Route path="/profile-page">
           <ProfilePage />
@@ -87,8 +94,8 @@ function App() {
           <NotFound />
         </Route>
       </Switch>
+      {/* </CurrentUserProvider> */}
       {/* </ApolloProvider> */}
-     
     </Fragment>
   );
 }
