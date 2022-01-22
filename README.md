@@ -124,7 +124,7 @@ This is an example of how to list things you need to use the software and how to
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-U
+Usage of the site will include setting up a Marketocracy account, listing/selling or buying an item between users.
 
 _For more examples, please refer to the [Documentation](https://github.com/PhilipBrowning/project3-marketplace)_
 
