@@ -19,7 +19,7 @@
 <h3 align="center">Marketocracy</h3>
 
   <p align="center">
-    project_description
+    Marketocracy is an e-commerce based site where buyers can list an item, communicate between the seller and the buyer, and decide if they would like to complete the transaction.
     <br />
     <a href="https://github.com/PhilipBrowning/project3-marketplace/"><strong>Explore the docs »</strong></a>
     <br />
@@ -64,7 +64,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Product Name Screen Shot][product-screenshot]](https://marketplace-project3.herokuapp.com/)
 
 
 
@@ -97,14 +97,14 @@ To get a local copy up and running follow these simple example steps.
 ### Prerequisites
 
 This is an example of how to list things you need to use the software and how to install them.
-* npm
+* Node/Dependencies
   ```sh
-  npm install npm@latest -g
+  Will need to install Node.JS, MongoDB, and the different node dependencies.
   ```
 
 ### Installation
 
-1. 
+1. Navigate to our repository at https://github.com/PhilipBrowning/project3-marketplace
 2. Clone the repo
    ```sh
    git clone https://github.com/PhilipBrowning/project3-marketplace.git
@@ -113,7 +113,10 @@ This is an example of how to list things you need to use the software and how to
    ```sh
    npm install
    ```
-4. 
+4. Run NPM start in terminal console
+   ```sh
+    npm start
+   ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -124,7 +127,7 @@ This is an example of how to list things you need to use the software and how to
 
 
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+_For more examples, please refer to the [Documentation](https://github.com/PhilipBrowning/project3-marketplace)_
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -153,13 +156,13 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-* Alexander Brandon - email@email_client.com
+* Alexander Brandon - alexlbrandon@gmail.com
 * Philip Browning - philip741@gmail.com
-* Terrence Meikle  - email@email_client.com
+* Terrence Meikle  - terrence_meikle@yahoo.com
 * Zachary Moore  - zmoore371@gmail.com
 * Jeffery Pastva  - jpastvait@gmail.com
 
-Project Link: [https://github.com/PhilipBrowning/project3-marketplace/](https://github.com/github_username/repo_name)
+Project Link: [https://github.com/PhilipBrowning/project3-marketplace/](https://github.com/PhilipBrowning/project3-marketplace)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
