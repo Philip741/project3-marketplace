@@ -153,11 +153,11 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Alexander Brandon - email@email_client.com
-Philip Browning - philip741@gmail.com
-Terrence Meikle  - email@email_client.com
-Zachary Moore  - zmoore371@gmail.com
-Jeffery Pastva  - jpastvait@gmail.com
+* Alexander Brandon - email@email_client.com
+* Philip Browning - philip741@gmail.com
+* Terrence Meikle  - email@email_client.com
+* Zachary Moore  - zmoore371@gmail.com
+* Jeffery Pastva  - jpastvait@gmail.com
 
 Project Link: [https://github.com/PhilipBrowning/project3-marketplace/](https://github.com/github_username/repo_name)
 
