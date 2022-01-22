@@ -1,9 +1,9 @@
-.card {
+/* .card {
   height: 10em;
   width: 15em;
   margin: 5px;
   display: flex;
-}
+} */
 /* display: flex; */
 
 /* width: 100%;
@@ -21,16 +21,16 @@
   height: 2em;
 } */
 
-.card div {
+/* .card div {
   height: 10em;
   width: 15em;
   margin: 10px;
-}
+} */
 
-img {
+.img {
   border: 1px solid #ddd;
   border-radius: 5px;
-  margin: 5px;
+  /* margin: 5px; */
   /* padding: 5px; */
   height: 100%;
   width: 100%;
@@ -38,21 +38,29 @@ img {
   object-fit: cover;
 }
 
-.card img {
+.imgDiv {
+  display: flex;
+  justify-content: space-around;
+}
+
+.imgDiv p {
+  font-size: 0.8em;
+}
+
+/* .card img {
   border: 1px solid #ddd;
   border-radius: 5px;
-  margin: 5px;
-  /* padding: 5px; */
-  height: 100%;
-  width: 100%;
-  /* width: 150px; */
-  object-fit: cover;
-}
+  margin: 5px; */
+/* padding: 5px; */
+/* height: 100%;
+  width: 100%; */
+/* width: 150px; */
+/* object-fit: cover;
+} */
 
 .test {
   height: 160px;
   width: 240px;
-  padding:1.5%;
+  padding: 1.5%;
   margin: 1%;
-  
 }

@@ -38,31 +38,33 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-self: top;
+  align-items: center;
+  justify-content: left;
 }
 
-.furniture {
-  /* margin-top: 5px; */
-  display: flex;
+/* .furniture { */
+/* margin-top: 5px; */
+/* display: flex;
   grid-column: 2/-1;
   grid-row: 3;
   background-color: rgb(255 251 235);
   flex-direction: row;
   flex-wrap: wrap;
   justify-self: auto;
-}
+} */
 
-.sportingGoods {
-  /* margin-top: 5px; */
-  display: flex;
+/* .sportingGoods { */
+/* margin-top: 5px; */
+/* display: flex;
   grid-column: 2/-1;
   grid-row: 4;
   background-color: rgb(255 251 235);
   flex-direction: row;
   flex-wrap: wrap;
   justify-self: auto;
-}
+} */
 .category {
-  margin-top: 30px;
+  margin-top: 10px;
   font-size: x-large;
   color: black;
   flex-basis: 100%;
