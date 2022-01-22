@@ -1,25 +1,44 @@
 [
   {
-    "name": "Big Car",
-    "description": "Runs good",
-    "price": 1800,
-    "itemPoster": "ZacharyMoore",
-    "username": "ZacharyMoore",
-    "category": "Automotive"
+    "name": "1985 Mercedes-Benz 500 Class",
+    "description": "166k miles, 4 speed automatic transmission rear wheel drive with 5.0L V8 engine",
+    "price":  4500,
+    "itemPoster": "AlexBrandon",
+    "category": "Automotive",
+    "imgUrl": "https://cdn05.carsforsale.com/06a1045c5a09adebecaa774ddf29fc61/800x600/1985-mercedes-benz-500-class-500-sel-4dr-sedan.jpg"
   },
   {
-    "name": "Bigger Car",
-    "description": "Runs gooder",
-    "price": 1900,
-    "itemPoster": "ZacharyMoore",
-    "username": "ZacharyMoore",
-    "category": "Automotive"
-  },
-  {
-    "name": "Coffee Maker",
-    "description": "Lightly used black and decker coffe pot.",
-    "price": 25,
+    "name": "2012 BMW X5",
+    "description": "129k miles Automatic 8 Speed transmision AWD with 3.0I6 Turbocharged ",
+    "price": 13995,
     "itemPoster": "PhillipBrowning",
-    "category": "Appliances"
+    "category": "Automotive",
+    "imgUrl": "https://cdn05.carsforsale.com/00fd28275fce007eec903010c33f9f082c/800x600/2012-bmw-x5-xdrive35i-awd-4dr-suv.jpg"
+  },
+  {
+    "name": "2006 GMC Yukon XL",
+    "description": "205k miles with 6.0L V8 engine. AWD automatic 4speed transmission",
+    "price": 6000,
+    "itemPoster": "TerrenceMeikle",
+    "category": "Automotive",
+    "imgUrl": "https://cdn05.carsforsale.com/00c36228e1c9cd64c06556b5b0d8bb7b0e/800x600/2006-gmc-yukon-xl-denali-awd-4dr-suv.jpg"
+  },
+  {
+    "name": "2013 Jeep Wrangler Unlimited",
+    "description": "85K miles, 4WD 3.6L V6 Automatic Transmission",
+    "price": 21995,
+    "itemPoster": "JefferyPastva",
+    "category": "Automotive",
+    "imgUrl": "https://cdn05.carsforsale.com/00b2312bcee105e76f35d9ca0bc503bf88/800x600/2013-jeep-wrangler-unlimited-sahara-4x4-4dr-suv.jpg"
+  },
+  {
+    "name": "2020 BMW M8",
+    "description": "1,897 Miles, Leather Seats, Tuborcharged 4.4L V8 AWD ",
+    "price": 126900,
+    "itemPoster": "AlexanderBrandon",
+    "category": "Automotive",
+    "imgUrl": "https://cdn05.carsforsale.com/0098beac432d9285705b5b01f16f75b961/800x600/2020-bmw-m8-convertible.jpg"
   }
 ]
+
+

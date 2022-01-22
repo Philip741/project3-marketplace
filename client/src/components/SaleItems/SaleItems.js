@@ -84,6 +84,7 @@ console.log(testData[0].url);
 function SaleItems() {
   return (
     <Fragment>
+<<<<<<< Updated upstream
       <div className={classes.test}>
         <Link to="/seller-modal">
           <img src={car1} alt="" />
@@ -139,6 +140,35 @@ function SaleItems() {
           <img src={car1} alt="" />
         </Link>
       </div>
+=======
+      {/* not sure this is working as intended */}
+      {loading && <p>Loading...</p>}
+      {isLoggedIn
+        ? data &&
+          data.items &&
+          data.items.map((e, idx) => (
+            <div className={classes.test} key={idx}>
+              <img src={e.imgUrl} alt="" onClick={() => showDetailPage(e)} />
+              <p>$ {e?.price}</p>
+              <p>{e?.name}</p>
+              <p>{e?.description}</p>
+              <p>{e?.itemPoster}</p>
+              <p>{e?.category}</p>
+            </div>
+          ))
+        : data &&
+          data.items &&
+          data.items.map((e, idx) => (
+            <div className={classes.test} key={idx}>
+              <img src={e?.imgUrl} alt="" />
+              <p>$ {e?.price}</p>
+              <p>{e?.name}</p>
+              <p>{e?.description}</p>
+              <p>{e?.itemPoster}</p>
+              <p>{e?.category}</p>
+            </div>
+          ))}
+>>>>>>> Stashed changes
     </Fragment>
   );
 }

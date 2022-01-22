@@ -17,6 +17,7 @@ typeDefs = gql`
     description: String
     price: Int
     isSold: Boolean
+    imgUrl: String
   }
 
   type Auth {

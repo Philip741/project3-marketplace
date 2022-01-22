@@ -19,3 +19,20 @@ export const QUERY_ALL_ITEMS = gql`
     }
   }
 `;
+<<<<<<< Updated upstream
+=======
+
+//RETRIEVES ALL ITEMS FOR SALE
+export const QUERY_LOAD_ALL = gql`
+  query loadall {
+    items {
+      name
+      description
+      price
+      category
+      itemPoster
+      imgUrl
+    }
+  }
+`;
+>>>>>>> Stashed changes
