@@ -25,7 +25,7 @@ app.use(express.json());
 //production static assets?
 
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '../clinet/build/index.html'));
+    res.sendFile(path.join(__dirname, '../client/build/index.html'));
 });
 
 db.once('open', () => {
