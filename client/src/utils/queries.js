@@ -66,6 +66,7 @@ export const QUERY_LOAD_ALL = gql`
       price
       category
       itemPoster
+      imgUrl
     }
   }
 `;
