@@ -36,7 +36,7 @@ function SellersModalPage(props) {
             {data && (
               <div className={classes['listing_info-div']}>
                 <div className={classes.imgDiv}>
-                  <img src={car1} alt="" />
+                  <img src={data.imgUrl} alt="" />
                 </div>
                 <div className={classes.infoDiv}>
                   <p> Cost: ${data?.price}</p>
