@@ -94,7 +94,7 @@ export default function Header({ onOpen }) {
           <Text>{userDetails.username}</Text>
         </Box>
     </Flex>
-    <Heading mt={10}>Purchased Items</Heading>
+    <Heading mt={10}>For Sale Items</Heading>
     <Table mt={10} variant='simple'>
   <TableCaption>* Items in process of purchase do not show here</TableCaption>
   <Thead>
