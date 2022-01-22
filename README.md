@@ -1,70 +1,184 @@
-# Getting Started with Create React App
+<div id="top"></div>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/PhilipBrowning/project3-marketplace">
+    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  </a>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<h3 align="center">Marketocracy</h3>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+  <p align="center">
+    Marketocracy is an e-commerce based site where buyers can list an item, communicate between the seller and the buyer, and decide if they would like to complete the transaction.
+    <br />
+    <a href="https://github.com/PhilipBrowning/project3-marketplace/"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/PhilipBrowning/project3-marketplace/">View Demo</a>
+    ·
+    <a href="https://github.com/PhilipBrowning/project3-marketplace/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/PhilipBrowning/project3-marketplace/issues">Request Feature</a>
+  </p>
+</div>
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ol>
+</details>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<!-- ABOUT THE PROJECT -->
+## About The Project
 
-### `npm run eject`
+[![Product Name Screen Shot][product-screenshot]](https://marketplace-project3.herokuapp.com/)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Built With
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+* [Node.js](https://nodejs.org/en/)
+* [Express.js](https://expressjs.com/)
+* [React.js](https://reactjs.org/)
+* [bcryptjs](https://www.npmjs.com/package/bcryptjs)
+* [GraphQL](https://graphql.org/)
+* [Apollo Server](https://www.apollographql.com/docs/)
+* [Chakra UI](https://chakra-ui.com/)
+* [MongoDB](https://www.mongodb.com/)
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+<!-- GETTING STARTED -->
+## Getting Started
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+This is an example of how you may give instructions on setting up your project locally.
+To get a local copy up and running follow these simple example steps.
 
-### Advanced Configuration
+### Prerequisites
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+This is an example of how to list things you need to use the software and how to install them.
+* Node/Dependencies
+  ```sh
+  Will need to install Node.JS, MongoDB, and the different node dependencies.
+  ```
 
-### Deployment
+### Installation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+1. Navigate to our repository at https://github.com/PhilipBrowning/project3-marketplace
+2. Clone the repo
+   ```sh
+   git clone https://github.com/PhilipBrowning/project3-marketplace.git
+   ```
+3. Install NPM packages
+   ```sh
+   npm install
+   ```
+4. Run NPM start in terminal console
+   ```sh
+    npm start
+   ```
 
-### `npm run build` fails to minify
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+<!-- USAGE EXAMPLES -->
+## Usage
+
+Usage of the site will include setting up a Marketocracy account, listing/selling or buying an item between users.
+
+_For more examples, please refer to the [Documentation](https://github.com/PhilipBrowning/project3-marketplace)_
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
+
+<!-- ROADMAP -->
+## Roadmap
+
+- [ ] Feature 1
+- [ ] Feature 2
+- [ ] Feature 3
+
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
+<!-- LICENSE -->
+## License
+
+Distributed under the MIT License. See `LICENSE.txt` for more information.
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
+
+<!-- CONTACT -->
+## Contact
+
+* Alexander Brandon - alexlbrandon@gmail.com
+* Philip Browning - philip741@gmail.com
+* Terrence Meikle  - terrence_meikle@yahoo.com
+* Zachary Moore  - zmoore371@gmail.com
+* Jeffery Pastva  - jpastvait@gmail.com
+
+Project Link: [https://github.com/PhilipBrowning/project3-marketplace/](https://github.com/PhilipBrowning/project3-marketplace)
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[contributors-shield]: https://img.shields.io/github/contributors/PhilipBrowning/project3-marketplace.svg?style=for-the-badge
+[contributors-url]: https://github.com/PhilipBrowning/project3-marketplace/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/PhilipBrowning/project3-marketplace.svg?style=for-the-badge
+[forks-url]: https://github.com/PhilipBrowning/project3-marketplace/network/members
+[stars-shield]: https://img.shields.io/github/stars/PhilipBrowning/project3-marketplace.svg?style=for-the-badge
+[stars-url]: https://github.com/PhilipBrowning/project3-marketplace/stargazers
+[issues-shield]: https://img.shields.io/github/issues/PhilipBrowning/project3-marketplace.svg?style=for-the-badge
+[issues-url]: https://github.com/PhilipBrowning/project3-marketplace/issues
+[license-shield]: https://img.shields.io/github/license/PhilipBrowning/project3-marketplace.svg?style=for-the-badge
+[license-url]: https://github.com/PhilipBrowning/project3-marketplace/blob/master/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/linkedin_username
+[product-screenshot]: images/screenshot.png
