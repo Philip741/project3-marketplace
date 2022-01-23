@@ -114,6 +114,11 @@
   width: 20em;
   margin-right: 20px;
 }
+
+.img {
+  object-fit: cover;
+}
+
 .infoDiv {
   display: flex;
   flex-direction: column;
