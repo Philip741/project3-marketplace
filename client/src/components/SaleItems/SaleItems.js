@@ -6,7 +6,6 @@ import { QUERY_LOAD_ALL } from '../../utils/queries';
 
 // import SellersModalPage from '../../pages/SellersModalPage/SellersModalPage';
 import classes from './SaleItems.module.css';
-import car1 from '../assets/images/test_item-1_car.jpg';
 
 function SaleItems() {
   const { loading, data } = useQuery(QUERY_LOAD_ALL);
@@ -42,8 +41,8 @@ function SaleItems() {
                 onClick={() => showDetailPage(e)}
               />
               <div className={classes.imgDiv}>
-                <p>${e?.price}</p>
-                <p>{e?.name}</p>
+                <p>${e?.price} </p>
+                <p className={classes.moveRight}>{e?.name}</p>
               </div>
               {/* <p>{e?.description}</p>
               <p>{e?.itemPoster}</p>
@@ -57,7 +56,7 @@ function SaleItems() {
               <img className={classes.img} src={e?.imgUrl} alt="" />
               <div className={classes.imgDiv}>
                 <p>${e?.price}</p>
-                <p>{e?.name}</p>
+                <p className={classes.moveRight}>{e?.name}</p>
               </div>
               {/* <p>{e?.description}</p>
               <p>{e?.itemPoster}</p>
