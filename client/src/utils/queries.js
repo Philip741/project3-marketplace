@@ -20,11 +20,13 @@ export const QUERY_USER_AND_ITEMS = gql`
       email
       items {
         _id
+        name
         category
         price
         description
         itemPoster
         isSold
+        imgUrl
       }
     }
   }
