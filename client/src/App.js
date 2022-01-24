@@ -81,7 +81,7 @@ function App() {
           />
           <MainSection loadAllQuery={loadAllQuery} />
         </Route>
-        <Route path="/profile-page/:user">
+        <Route path="/profile-page/:username">
           <ProfilePage />
         </Route>
         <Route path="/add-sale-item">
