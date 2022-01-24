@@ -15,6 +15,12 @@
   justify-content: center;
 }
 
+.buttonDiv {
+  display: flex;
+  /* justify-content: space-around; */
+  justify-content: center;
+}
+
 .sectionOne {
   border-bottom: 1px solid black;
 }
@@ -25,6 +31,103 @@
   font-size: 3em;
 }
 
-.usernameDiv_button {
-  margin: 20px auto;
+.button {
+  appearance: button;
+  background-color: #063df0;
+  background-image: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.15),
+    rgba(255, 255, 255, 0)
+  );
+  border: 1px solid #063df0;
+  border-radius: 1rem;
+  box-shadow: rgba(255, 255, 255, 0.15) 0 1px 0 inset,
+    rgba(46, 54, 80, 0.075) 0 1px 1px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.5rem;
+  font-weight: 500;
+  line-height: 1.5;
+  /* align-items: center; */
+  margin: 10px;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-transform: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.button {
+  font-size: 10px;
+  font-family: Arial;
+  width: 90px;
+  height: 40px;
+  border-width: 1px;
+  color: #fff;
+  border-color: #18ab29;
+  border-top-left-radius: 28px;
+  border-top-right-radius: 28px;
+  border-bottom-left-radius: 28px;
+  border-bottom-right-radius: 28px;
+  text-shadow: 1px 1px 0px #2f6627;
+  background: #44c767;
+}
+
+.button:hover {
+  background: #5cbf2a;
+}
+
+.button:focus:not(:focus-visible),
+.button:focus {
+  outline: 0;
+}
+
+.button:disabled {
+  background-image: none;
+  box-shadow: none;
+  opacity: 0.65;
+  pointer-events: none;
+}
+
+.heading_h2 {
+  text-align: center;
+  /* align-items: center; */
+  /* margin: auto; */
+}
+
+.listing_h3 {
+  text-align: left;
+}
+
+.listing_info-div {
+  display: flex;
+}
+
+.imgDiv {
+  height: 20em;
+  width: 20em;
+  margin-right: 20px;
+}
+
+.img {
+  object-fit: cover;
+}
+
+.infoDiv {
+  display: flex;
+  flex-direction: column;
+}
+
+.infoDiv p {
+  margin: 0.5em;
+}
+
+.infoDiv p:first-of-type {
+  margin-top: 0;
 }

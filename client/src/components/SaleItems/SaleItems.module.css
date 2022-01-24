@@ -36,15 +36,20 @@
   width: 100%;
   /* width: 150px; */
   object-fit: cover;
+  cursor: pointer;
 }
 
 .imgDiv {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .imgDiv p {
   font-size: 0.8em;
+}
+
+.moveRight {
+  text-align: right;
 }
 
 /* .card img {
