@@ -79,6 +79,10 @@
   background: #44c767;
 }
 
+.button a {
+  vertical-align: middle;
+}
+
 .button:hover {
   background: #5cbf2a;
 }

@@ -7,7 +7,7 @@ import classes from './SellersModalPage.module.css';
 function SellersModalPage(props) {
   const data = JSON.parse(localStorage.getItem('item') || {});
 
-  console.log(data.itemPoster);
+  console.log(data);
 
   return (
     <SellersModal onClose={props.onClose}>
@@ -25,6 +25,12 @@ function SellersModalPage(props) {
               <Link to="/">
                 <button className={classes.button}> Return </button>
               </Link>
+              <a
+                className={classes.button}
+                href="mailto:{data.itemPoster}@example.com"
+              >
+                Msg Seller
+              </a>
             </div>
           </div>
         </section>
