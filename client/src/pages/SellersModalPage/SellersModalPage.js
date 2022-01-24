@@ -3,14 +3,14 @@ import { useCurrentUserContext } from '../../context/auth-context';
 
 import SellersModal from '../../components/UI/SellersModal/SellersModal';
 import classes from './SellersModalPage.module.css';
-import car1 from '../../components/assets/images/test_item-1_car.jpg';
 
 function SellersModalPage(props) {
   const data = JSON.parse(localStorage.getItem('item') || {});
-  console.log('props.sellerData +++', props.sellerData, data);
+
+  console.log(data.itemPoster);
 
   return (
-    <SellersModal>
+    <SellersModal onClose={props.onClose}>
       <div className={classes.sellersModal}>
         <section className={classes.sectionOne}>
           <div className={classes.usernameDiv}>
@@ -18,7 +18,7 @@ function SellersModalPage(props) {
             <div className={classes.buttonDiv}>
               <Link
                 className={classes['usernameDiv_button']}
-                to="/profile-page"
+                to={`/profile-page/${data.itemPoster}`}
               >
                 <button className={classes.button}>View Profile</button>
               </Link>
@@ -36,7 +36,7 @@ function SellersModalPage(props) {
             {data && (
               <div className={classes['listing_info-div']}>
                 <div className={classes.imgDiv}>
-                  <img src={data.imgUrl} alt="" />
+                  <img className={classes.img} src={data.imgUrl} alt="" />
                 </div>
                 <div className={classes.infoDiv}>
                   <p> Cost: ${data?.price}</p>

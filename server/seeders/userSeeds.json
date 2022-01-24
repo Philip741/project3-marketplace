@@ -1,32 +1,32 @@
 [
-    {
-        "username": "ZacharyMoore",
-        "email": "zacharymoore@gmail.com",
-        "password": "123456789"
-    },
-    {
-        "username": "PhillipBrowning",
-        "email": "phillipbrowning@gmail.com",
-        "password": "123456789"
-    },
-    {
-        "username": "AlexanderBrandon",
-        "email": "alexanderbrandon@gmail.com",
-        "password": "123456789"
-    },
-    {
-        "username": "TerrenceMeikle",
-        "email": "terrencemeikle@gmail.com",
-        "password": "123456789"
-    },
-    {
-        "username": "JefferyPastva",
-        "email": "jefferypastva@gmail.com",
-        "password": "123456789"
-    },
-    {
-        "username": "RandomMcRandomer",
-        "email": "islifeevenreal@gmail.com",
-        "password": "123456789"
-    }
+  {
+    "username": "ZacharyMoore",
+    "email": "zacharymoore@gmail.com",
+    "password": "123456789"
+  },
+  {
+    "username": "PhillipBrowning",
+    "email": "phillipbrowning@gmail.com",
+    "password": "123456789"
+  },
+  {
+    "username": "AlexanderBrandon",
+    "email": "alexanderbrandon@gmail.com",
+    "password": "123456789"
+  },
+  {
+    "username": "TerrenceMeikle",
+    "email": "terrencemeikle@gmail.com",
+    "password": "123456789"
+  },
+  {
+    "username": "JefferyPastva",
+    "email": "jefferypastva@gmail.com",
+    "password": "123456789"
+  },
+  {
+    "username": "RandomMcRandomer",
+    "email": "islifeevenreal@gmail.com",
+    "password": "123456789"
+  }
 ]

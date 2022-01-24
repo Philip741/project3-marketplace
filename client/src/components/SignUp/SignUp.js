@@ -45,13 +45,21 @@ function SignUp(props) {
     });
   };
 
+  console.log('***signup***', props);
+
   return (
     <Modal onClose={props.onClose}>
       <div className={classes['login-box']}>
         {data ? (
-          <p>
-            Success! You may now head <Link to="/">back to the homepage.</Link>
-          </p>
+          <div className={classes.center}>
+            <p>
+              Success! You may now head{' '}
+              <Link to="/">back to the homepage and log in.</Link>
+            </p>
+            <button className={classes.button} onClick={props.onClose}>
+              Close
+            </button>
+          </div>
         ) : (
           <form onSubmit={submitHandler} className={classes.left}>
             <h1>Sign up</h1>
@@ -84,15 +92,20 @@ function SignUp(props) {
               // value={retypedPassword}
               // onChange={retypedPasswordhandler}
             />
-            <button className={classes.button} type="submit">
-              SIGN ME UP
-            </button>
+            <div className={classes.flex}>
+              <button className={classes.button} type="submit">
+                SIGN ME UP
+              </button>
+              <button className={classes.button} onClick={props.onClose}>
+                Close
+              </button>
+            </div>
 
             {/* <button type="submit" name="signup_submit" value="Sign me up" /> */}
           </form>
         )}
 
-        <div className={classes.right}>
+        {/* <div className={classes.right}>
           <span className={classes.loginwith}>
             Sign in with
             <br />
@@ -109,9 +122,9 @@ function SignUp(props) {
             Log in with Google+
           </button>
         </div>
-        <div className={classes.or}>OR</div>
-        <button onClick={props.onClose}>Close</button>
+        <div className={classes.or}>OR</div> */}
       </div>
+      {/* <button onClick={props.onClose}>Close</button> */}
     </Modal>
   );
 }
