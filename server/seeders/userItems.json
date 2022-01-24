@@ -3,7 +3,7 @@
     "name": "1985 Mercedes-Benz 500 Class",
     "description": "166k miles, 4 speed automatic transmission rear wheel drive with 5.0L V8 engine",
     "price":  4500,
-    "itemPoster": "AlexBrandon",
+    "itemPoster": "AlexanderBrandon",
     "category": "Automotive",
     "imgUrl": "https://cdn05.carsforsale.com/06a1045c5a09adebecaa774ddf29fc61/800x600/1985-mercedes-benz-500-class-500-sel-4dr-sedan.jpg"
   },
@@ -88,6 +88,27 @@
     "itemPoster": "TerrenceMeikle",
     "category": "Automotive",
     "imgUrl": "https://cdn05.carsforsale.com/00c36228e1c9cd64c06556b5b0d8bb7b0e/800x600/2006-gmc-yukon-xl-denali-awd-4dr-suv.jpg"
+  },
+  {
+    "name": "Carhartt Jacket",
+    "description": "Very used carhartt jacket, no tears but a lot of stains",
+    "price": 25, 
+    "itemPoster": "ZacharyMoore",
+    "category": "Clothing"
+  },
+  {
+    "name":"Microwave",
+    "description": "Panasonic SN966S Microwave, lightly used",
+    "price": 50,
+    "itemPoster": "PhillipBrowning",
+    "category": "Appliances" 
+  },
+  {
+    "name": "Prom Dress",
+    "description": "Size 4 prom dress, worn once",
+    "price": 100,
+    "itemPoster": "AlexanderBrandon",
+    "category": "Clothing"
   }
 
 ]
