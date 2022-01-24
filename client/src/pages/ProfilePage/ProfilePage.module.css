@@ -27,3 +27,41 @@
   flex: auto;
   background-color: rgb(245, 227, 203);
 }
+
+.listItems {
+  display: flex;
+  justify-content: space-between;
+  margin: 1em;
+}
+
+.forSale {
+  font-weight: 500;
+  font-size: 24px;
+  text-align: center;
+  /* margin: 1em auto; */
+}
+.itemsColumn {
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+}
+.imgDiv {
+  margin: 1em;
+  height: 300px;
+  width: 300px;
+}
+.descriptionDiv {
+  margin: 1em;
+}
+
+.descriptionDiv p {
+  font-weight: 600;
+}
+
+.img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
