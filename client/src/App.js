@@ -10,8 +10,8 @@
 // import { useCurrentUserContext } from '../../context/auth-context';
 import { useCurrentUserContext } from './context/auth-context';
 import { useQuery } from '@apollo/client';
-// import { QUERY_LOAD_ALL } from '../../utils/queries';
 import { QUERY_LOAD_ALL } from './utils/queries';
+// import { QUERY_ALL_USERS_AND_ITEMS } from './utils/queries';
 
 import { Fragment, useState } from 'react';
 import { Route, Switch } from 'react-router-dom';
@@ -81,7 +81,7 @@ function App() {
           />
           <MainSection loadAllQuery={loadAllQuery} />
         </Route>
-        <Route path="/profile-page">
+        <Route path="/profile-page/:user">
           <ProfilePage />
         </Route>
         <Route path="/add-sale-item">

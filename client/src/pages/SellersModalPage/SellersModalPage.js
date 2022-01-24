@@ -6,7 +6,8 @@ import classes from './SellersModalPage.module.css';
 
 function SellersModalPage(props) {
   const data = JSON.parse(localStorage.getItem('item') || {});
-  console.log('props.sellerData +++', props.sellerData, data);
+
+  console.log(data.itemPoster);
 
   return (
     <SellersModal onClose={props.onClose}>
@@ -17,7 +18,7 @@ function SellersModalPage(props) {
             <div className={classes.buttonDiv}>
               <Link
                 className={classes['usernameDiv_button']}
-                to="/profile-page"
+                to={`/profile-page/${data.itemPoster}`}
               >
                 <button className={classes.button}>View Profile</button>
               </Link>
