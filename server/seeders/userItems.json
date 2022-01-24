@@ -94,21 +94,24 @@
     "description": "Very used carhartt jacket, no tears but a lot of stains",
     "price": 25, 
     "itemPoster": "ZacharyMoore",
-    "category": "Clothing"
+    "category": "Clothing",
+    "imgUrl": "https://preview.redd.it/be587fc1gi221.jpg?width=640&crop=smart&auto=webp&s=8f215b6fb5962115a525f1d70ba0d894dc7fa705"
   },
   {
     "name":"Microwave",
     "description": "Panasonic SN966S Microwave, lightly used",
     "price": 50,
     "itemPoster": "PhillipBrowning",
-    "category": "Appliances" 
+    "category": "Appliances",
+    "imgUrl": "https://www.thespruceeats.com/thmb/eNab4y9OUcgCGk_aBtSlHmvmwOw=/850x850/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Panasonic-Microwave-NN-SN966S_HeroSquare-fd773c59cf7d4489ba3656aa54e040b8.jpg"
   },
   {
     "name": "Prom Dress",
     "description": "Size 4 prom dress, worn once",
     "price": 100,
     "itemPoster": "AlexanderBrandon",
-    "category": "Clothing"
+    "category": "Clothing",
+    "imgUrl": "https://cdn.shopify.com/s/files/1/1464/6450/products/champagne_lace_prom_dresses_f7bc0b67-f609-4ac1-ad14-c8deb73d2a37.jpg?v=1589915627"
   }
 
 ]
