@@ -135,10 +135,11 @@ _For more examples, please refer to the [Documentation](https://github.com/Phili
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-
+- [ ] More options for purchasing/payment features (Paypal, Crypto, Etc)
+- [ ] Integrating a shopping cart feature
+- [ ] Moving website off of Heroku to a more independent domain (example.com .net .io)
+- [ ] Potential to steer website in direction of E-Bay type design.
+- [ ] Potential for advertisements such as Google Adsense
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -181,4 +182,4 @@ Project Link: [https://github.com/PhilipBrowning/project3-marketplace/](https://
 [license-url]: https://github.com/PhilipBrowning/project3-marketplace/blob/main/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/linkedin_username
-[product-screenshot]: images/localhost_3000_ (5).png/
+[product-screenshot]: images/screenshot2.png
