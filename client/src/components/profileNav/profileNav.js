@@ -13,16 +13,13 @@ import {
   MenuList,
 } from '@chakra-ui/react';
 import { FiChevronDown, FiBell } from 'react-icons/fi';
-import { useHistory } from 'react-router-dom';
 
 import Auth from '../../utils/auth';
 
 export default function ProfileNav() {
-  const history = useHistory();
-
   const logoutHandler = (e) => {
     e.preventDefault();
-    history.push('/');
+
     Auth.logout();
   };
 
