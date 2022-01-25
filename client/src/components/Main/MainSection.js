@@ -14,23 +14,8 @@ import {
 
 function MainSection(props) {
   const { colorMode, toggleColorMode } = useColorMode();
-  console.log('main section data +++', props);
+  console.log('main section data +++', props.loadAllQuery);
   return (
-    // <main className={classes.main}>
-    //   <Banner className={classes.one} />
-    //   <div className={classes.two}>
-    //     this is the aside
-    //     <div>Category</div>
-    //     <div>Category</div>
-    //     <div>Category</div>
-    //   </div>
-    //   <div className={classes.three}>
-    //     {/* <div className={classes.sale}> */}
-    //     <SaleItems photoData={props.photoData} />
-    //     {/* </div> */}
-    //   </div>
-    // </main>
-
     <main className={classes.main}>
       <div>
         <IconButton
@@ -67,25 +52,11 @@ function MainSection(props) {
 
       <div className={classes.automotive}>
         <div className={classes.category}>
-          <h1>Automotive</h1>
+          <h1>Today's Hot Deals!</h1>
         </div>
 
         <SaleItems saleItems={props.loadAllQuery} />
       </div>
-      {/* <div className={classes.furniture}>
-        <div className={classes.category}>
-          <h1>Furniture</h1>
-        </div>
-
-        <SaleItems photoData={props.photoData} />
-      </div> */}
-      {/* <div className={classes.sportingGoods}>
-        <div className={classes.category}>
-          <h1>Sporting Goods</h1>
-        </div>
-
-        <SaleItems photoData={props.photoData} />
-      </div> */}
     </main>
   );
 }

@@ -1,25 +1,119 @@
 [
   {
-    "name": "Big Car",
-    "description": "Runs good",
-    "price": 1800,
-    "itemPoster": "ZacharyMoore",
-    "username": "ZacharyMoore",
-    "category": "Automotive"
+    "name": "1985 Mercedes-Benz 500 Class",
+    "description": "166k miles, 4 speed automatic transmission rear wheel drive with 5.0L V8 engine",
+    "price":  4500,
+    "itemPoster": "AlexanderBrandon",
+    "category": "Automotive",
+    "imgUrl": "https://cdn05.carsforsale.com/06a1045c5a09adebecaa774ddf29fc61/800x600/1985-mercedes-benz-500-class-500-sel-4dr-sedan.jpg"
   },
   {
-    "name": "Bigger Car",
-    "description": "Runs gooder",
-    "price": 1900,
-    "itemPoster": "ZacharyMoore",
-    "username": "ZacharyMoore",
-    "category": "Automotive"
+    "name": "2020 BMW M8",
+    "description": "1,897 Miles, Leather Seats, Tuborcharged 4.4L V8 AWD ",
+    "price": 126900,
+    "itemPoster": "AlexanderBrandon",
+    "category": "Automotive",
+    "imgUrl": "https://cdn05.carsforsale.com/0098beac432d9285705b5b01f16f75b961/800x600/2020-bmw-m8-convertible.jpg"
   },
   {
-    "name": "Coffee Maker",
-    "description": "Lightly used black and decker coffe pot.",
-    "price": 25,
+    "name": "7 Drawer Wooden Dresser",
+    "description": "Like-New all wood dresser", 
+    "price": 450,
+    "itemPoster": "ZacharyMoore",
+    "category": "Homegoods",
+    "imgUrl": "https://www.livingspaces.com/globalassets/productassets/200000-299999/240000-249999/241000-241999/241100-241199/241125/241125_grey_wood_dresser_1.jpg?w=650&h=438&mode=pad"
+  },
+  {
+    "name": "2012 BMW X5",
+    "description": "129k miles Automatic 8 Speed transmision AWD with 3.0I6 Turbocharged ",
+    "price": 13995,
     "itemPoster": "PhillipBrowning",
-    "category": "Appliances"
+    "category": "Automotive",
+    "imgUrl": "https://cdn05.carsforsale.com/00fd28275fce007eec903010c33f9f082c/800x600/2012-bmw-x5-xdrive35i-awd-4dr-suv.jpg"
+  },
+  {
+    "name": "Titleist Golf Clubs",
+    "description": "Complete set of Titleist golf clubs with bag. Have only been used a few times.",
+    "price": 600,
+    "itemPoster": "PhillipBrowning",
+    "category": "Sporting",
+    "imgUrl": "https://cdn.mos.cms.futurecdn.net/MNofvXoHb9woPiyJoScbzH-1280-80.jpg.webp"
+  },
+  {
+    "name": "Nomad Kayak - 10ft",
+    "description": "In good condition, just missing seat. Does not come with a paddle",
+    "price": 100,
+    "itemPoster": "AlexanderBrandon",
+    "category": "Sporting",
+    "imgUrl": "https://scontent-iad3-2.xx.fbcdn.net/v/t45.5328-4/p180x540/272013439_4554753954635901_6218495585177229035_n.png?_nc_cat=109&ccb=1-5&_nc_sid=c48759&_nc_ohc=IlmtckpPx_kAX-08RUH&_nc_oc=AQmZi1SOblSdzNV_nqfAgHzaXCrDjVXYViH3FTmruSKV-E7UL7JoEFAY3OQcRIs5rdA&_nc_ht=scontent-iad3-2.xx&oh=00_AT_FnRgyHMk6Seie6JwR4x3opxgEuCeyN_NFpnCPyKUtJA&oe=61F139A8"
+
+  },
+  {
+    "name": "Apple Watch 3",
+    "description": "Used Apple watch on AT&T Network. No scratches",
+    "price": 100,
+    "itemPoster": "JefferyPastva",
+    "category": "Electronics",
+    "imgUrl": "https://scontent-iad3-2.xx.fbcdn.net/v/t45.5328-4/s960x960/269752126_4450799441696984_7122615857142291918_n.png?_nc_cat=104&ccb=1-5&_nc_sid=c48759&_nc_ohc=Woh9-iwUQB0AX9w63_t&_nc_ht=scontent-iad3-2.xx&oh=00_AT9MPR0NWgk8YRYtpZvuV9PUFF1En2O2qe1qSBb_PEpzrg&oe=61F08717"
+
+  },
+  {
+    "name": "2013 Jeep Wrangler Unlimited",
+    "description": "85K miles, 4WD 3.6L V6 Automatic Transmission",
+    "price": 21995,
+    "itemPoster": "JefferyPastva",
+    "category": "Automotive",
+    "imgUrl": "https://www.cnet.com/a/img/resize/5c0746af1095254db663547a1ec1b03d2435509c/hub/2021/04/23/9c602201-c077-457f-869f-3c045082c150/jeep-wrangler-4xe-202x-731540.jpg?auto=webp&width=768"
+  },
+  {
+    "name": "Basketball Goal",
+    "description": "Tripple Threat 10ft professional basketball goal",
+    "price": 150,
+    "itemPoster": "TerrenceMeikle",
+    "category": "Sporting",
+    "imgUrl": "https://cdn.shopify.com/s/files/1/0546/0157/products/TPT553withBow_52cfc35d-541a-4e1f-863f-270faeb4b9bb.jpg?v=1625203621"
+  },
+  {
+    "name": "Antique Stove",
+    "description": "1927 Quality Gas Stove featuring 4 burners, single oven, broiler, storage drawer and a condiment shelf.",
+    "price": 1500,
+    "itemPoster": "JefferyPastva",
+    "category": "Appliances",
+    "imgUrl": "https://www.antiqueappliances.com/wp-content/uploads/1927-Quality28a.jpg"
+  },
+  {
+    "name": "2006 GMC Yukon XL",
+    "description": "205k miles with 6.0L V8 engine. AWD automatic 4speed transmission",
+    "price": 6000,
+    "itemPoster": "TerrenceMeikle",
+    "category": "Automotive",
+    "imgUrl": "https://cdn05.carsforsale.com/00c36228e1c9cd64c06556b5b0d8bb7b0e/800x600/2006-gmc-yukon-xl-denali-awd-4dr-suv.jpg"
+  },
+  {
+    "name": "Carhartt Jacket",
+    "description": "Very used carhartt jacket, no tears but a lot of stains",
+    "price": 25, 
+    "itemPoster": "ZacharyMoore",
+    "category": "Clothing",
+    "imgUrl": "https://preview.redd.it/be587fc1gi221.jpg?width=640&crop=smart&auto=webp&s=8f215b6fb5962115a525f1d70ba0d894dc7fa705"
+  },
+  {
+    "name":"Microwave",
+    "description": "Panasonic SN966S Microwave, lightly used",
+    "price": 50,
+    "itemPoster": "PhillipBrowning",
+    "category": "Appliances",
+    "imgUrl": "https://www.thespruceeats.com/thmb/eNab4y9OUcgCGk_aBtSlHmvmwOw=/850x850/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Panasonic-Microwave-NN-SN966S_HeroSquare-fd773c59cf7d4489ba3656aa54e040b8.jpg"
+  },
+  {
+    "name": "Prom Dress",
+    "description": "Size 4 prom dress, worn once",
+    "price": 100,
+    "itemPoster": "AlexanderBrandon",
+    "category": "Clothing",
+    "imgUrl": "https://cdn.shopify.com/s/files/1/1464/6450/products/champagne_lace_prom_dresses_f7bc0b67-f609-4ac1-ad14-c8deb73d2a37.jpg?v=1589915627"
   }
+
 ]
+
+
