@@ -13,14 +13,20 @@ import {
   MenuList,
 } from '@chakra-ui/react';
 import { FiChevronDown, FiBell } from 'react-icons/fi';
+import { useHistory } from 'react-router-dom';
 
 import Auth from '../../utils/auth';
 
 export default function ProfileNav() {
+  const history = useHistory();
+
   const logoutHandler = (e) => {
     e.preventDefault();
 
     Auth.logout();
+  };
+  const returnHomeHandler = () => {
+    history.push('/');
   };
 
   return (
@@ -62,7 +68,7 @@ export default function ProfileNav() {
             </HStack>
           </MenuButton>
           <MenuList fontSize="lg" bg="white" borderColor="gray.200">
-            <MenuItem>Profile</MenuItem>
+            <MenuItem onClick={returnHomeHandler}>Return Home</MenuItem>
             <MenuDivider />
             <MenuItem onClick={logoutHandler}>Sign out</MenuItem>
           </MenuList>
